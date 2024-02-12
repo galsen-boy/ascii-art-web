@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      /* Styles for the form */
+      form.result {
+          margin-top: 20px;
+      }
+      
+      form.result label {
+          font-weight: bold;
+      }
+      
+      form.result select,
+      form.result textarea {
+          margin-bottom: 10px;
+          width: 100%;
+      }
+      
+      form.result .button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          margin-right: 10px;
+      }
+      
+      /* Styles for the result section */
+      div.result {
+          margin-top: 20px;
+          border: 1px solid #ccc;
+          padding: 10px;
+      }
+      
+      div.result pre {
+          white-space: pre-wrap;
+          /* background-color: green; */
+      }
+      
+      /* Styles for the footer */
+      footer {
+          text-align: center;
+          margin-top: 20px;
+      }
+  </style>
+  <title>ASCII-ART-WEB</title>
+</head>
+<body>
+  <form class="result" action="ascii-art" method="POST">
+    <label for="select">Banner</label><br>
+        <select name="banner">
+            <option value="standard">standard</option>
+            <option value="shadow">shadow</option>
+            <option value="thinkertoy">thinkertoy</option>
+        </select><br><br>
+    <textarea name="input" required placeholder="type something" rows="7" cols="80"></textarea>
+    <button class="button" type="submit" value="submit">submit</button>
+    <input class="button" type="reset" name="reset" value="Clear">
+  </form>
+    <div class="result">
+            <pre>{{ . }}</pre>
+    </div>
+  <div > 
+    <footer>
+        <p>Author: MOURIDE ZONE 01 COPYRIGHT<br>
+    </footer>
+  </div >
+</body>
+</html>

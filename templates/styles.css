@@ -1,0 +1,41 @@
+/* Styles for the form */
+form.result {
+    margin-top: 20px;
+  }
+  
+  form.result label {
+    font-weight: bold;
+  }
+  
+  form.result select,
+  form.result textarea {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  form.result .button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the result section */
+  div.result {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  div.result pre {
+    white-space: pre-wrap;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
